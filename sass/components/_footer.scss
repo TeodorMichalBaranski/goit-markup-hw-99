@@ -1,0 +1,198 @@
+.footer-background {
+  background-color: rgb(47, 48, 58);
+}
+.page-wrapper--footer {
+  margin: 0 auto;
+  padding: 60px 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 0;
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__contacts .logo {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    max-height: 81px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  &__address--contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    max-height: 81px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  &__social {
+    width: 206px;
+  }
+  &__header {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  &__newsletter .footer__header {
+    margin-bottom: 20px;
+  }
+  &__address:hover,
+  &__address:focus,
+  &__address--contact:hover,
+  &__address--contact:focus {
+    color: $brand-blue;
+  }
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  &__button {
+    width: 200px;
+    height: 50px;
+    background: $brand-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+  }
+  &__input {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: 0;
+    border-radius: 4px;
+    background-color: rgb(47, 48, 58);
+    padding: 15px 16px;
+    color: rgb(255, 255, 255);
+    max-width: 90vw;
+  }
+  &__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+  }
+  &__button--color {
+    fill: white;
+  }
+  &__button:hover .newsletter__button--color {
+    fill: $brand-black;
+  }
+  &__button:focus,
+  &__button:hover {
+    transition: 250ms;
+    background-color: $brand-blue;
+    color: $brand-black;
+    cursor: pointer;
+  }
+  &__input:focus,
+  &__input:hover {
+    border-color: $brand-blue;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+
+    &__social,
+    &__contacts {
+      flex-basis: calc(100% / 2);
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-wrapper--footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+  }
+
+  .footer {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__contacts {
+      align-items: flex-start;
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+    &__address {
+      text-align: left;
+    }
+    &__social {
+      width: 206px;
+      flex-basis: auto;
+      margin-top: 12px;
+      margin-bottom: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &__wrapper {
+      align-items: flex-start;
+    }
+    &__header {
+      text-align: left;
+    }
+    &__newsletter {
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  .newsletter {
+    flex-direction: row;
+    &__input {
+      width: 358px;
+    }
+  }
+}

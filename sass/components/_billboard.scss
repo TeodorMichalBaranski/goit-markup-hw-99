@@ -1,0 +1,90 @@
+.billboard {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 400px;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+
+  &__button {
+    background-color: $brand-blue;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-size: 1.625rem;
+    font-weight: 900;
+    line-height: 2.65rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0;
+  }
+  &__button:hover,
+  &__button:focus {
+    transition: 250ms;
+    cursor: pointer;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .billboard {
+    background-image: url("../images/background_mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .billboard {
+    background-image: url("../images/background_tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-size) and (min-device-pixel-ratio: 2),
+  (min-width: $tablet-size) and (min-resolution: 192dpi),
+  (min-width: $tablet-size) and (min-resolution: 2dppx) {
+  .billboard {
+    background-image: url("../images/background_tablet@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .billboard {
+    max-width: 1600px;
+    margin-bottom: 94px;
+    height: 600px;
+    background-image: url("../images/background_desktop.jpg");
+  }
+}
+
+@media (min-width: $desktop-size) and (min-device-pixel-ratio: 2),
+  (min-width: $desktop-size) and (min-resolution: 192dpi),
+  (min-width: $desktop-size) and (min-resolution: 2dppx) {
+  .billboard {
+    background-image: url("../images/background_desktop@2x.jpg");
+  }
+}

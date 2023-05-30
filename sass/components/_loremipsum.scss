@@ -1,0 +1,55 @@
+.loremipsum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 30px 0 10px 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $brand-grey;
+  }
+
+  &__icon {
+    background-color: rgb(245, 244, 250);
+    border-radius: 4px;
+    margin-top: 94p;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .loremipsum {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+
+    &__header {
+      text-align: left;
+    }
+
+    &__wrapper {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .loremipsum {
+    margin-bottom: 94px;
+    flex-wrap: nowrap;
+  }
+}
