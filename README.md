@@ -1,1 +1,1 @@
-https://teodormichalbaranski.github.io/goit-markup-hw-06/
+https://github.com/TeodorMichalBaranski/goit-markup-hw-08

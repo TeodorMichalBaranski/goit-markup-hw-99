@@ -76,27 +76,8 @@
       text-decoration: none;
     }
 
-    &__link--agency {
-      color: $brand-blue;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.1;
-      position: relative;
-    }
-
-    &--agency::after {
-      content: "";
-      background-color: $brand-blue;
-      width: 51px;
-      height: 4px;
-      border-radius: 2px;
-      position: absolute;
-      top: 44px;
-      display: block;
-    }
-
     &__item--contact {
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 500;
       line-height: 1.17;
       letter-spacing: 0.02em;
@@ -173,7 +154,7 @@
     }
 
     &__item {
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 500;
       line-height: 1.17;
       color: $brand-black;
@@ -182,7 +163,7 @@
     }
 
     &__item--contact {
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 500;
       line-height: 1.17;
       letter-spacing: 0.02em;

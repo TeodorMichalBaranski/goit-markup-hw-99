@@ -119,16 +119,16 @@
   &__button--color {
     fill: white;
   }
-  &__button:hover .newsletter__button--color {
-    fill: $brand-black;
-  }
-  &__button:focus,
-  &__button:hover {
-    transition: 250ms;
-    background-color: $brand-blue;
-    color: $brand-black;
-    cursor: pointer;
-  }
+  // &__button:hover .newsletter__button--color {
+  //   fill: $;
+  // }
+  // &__button:focus,
+  // &__button:hover {
+  //   transition: 250ms;
+  //   background-color: rgb(245, 244, 250);
+  //   color: $brand-black;
+  //   cursor: pointer;
+  // }
   &__input:focus,
   &__input:hover {
     border-color: $brand-blue;
